@@ -1,0 +1,32 @@
+{
+  "name": "sprintf-ext-string",
+  "description": "String formatting extension for sprintf-js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/litmit/sprintf-ext-string",
+  "author": {
+    "name": "limit",
+    "email": "litmit@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/litmit/sprintf-ext-string.git"
+  },
+  "bugs": {
+    "url": "https://github.com/litmit/sprintf-ext-string/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "keywords": [
+    "sprintf",
+    "extension",
+    "format",
+    "string"
+  ],
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "sprintf-js": "git+https://github.com/litmit/sprintf.js.git#expandable"
+  }
+}
