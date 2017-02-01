@@ -1,6 +1,6 @@
 # sprintf-ext-string
 
-> String formatting extension for sprintf-js
+> String formatting extension for 'sprintf-js'
 
 ## Overview
 
@@ -13,16 +13,16 @@ inside `sprintf` to format `sprintf` arguments according desired specification.
 An additional formatting modifiers may be passed in the `sprintf` format string if need.
 
   You can use any existing formatting features of `sprintf` together with such user defined type specifiers
-(width, precision, padding and aligning). They will by applied to result of user function.
+(width, precision, padding and aligning). They will be applied to result of user function.
 
 
 ## Getting Started
 
-Install featured `sprintf-js`:
+Install featured [sprintf-js](https://github.com/litmit/sprintf.js/tree/expandable):
 ```shell
 npm install https://github.com/litmit/sprintf.js.git#expandable
 ```
-Install this extension:
+Install [this extension](https://github.com/litmit/sprintf-ext-string):
 ```shell
 npm install sprintf-ext-string
 ```
@@ -50,8 +50,6 @@ console.log(sprintf("Hello %[Fl]S", user.name));      // --> Hello Dolly molly
 console.log(sprintf("Hello %[fU]S", user.name));      // --> Hello dOLLY MOLLY
 ```
 
-  
-
 ## String formatting modifiers
 
 * `%S` or `%[U]S` - now yields a string in UPPER CASE
@@ -64,3 +62,8 @@ console.log(sprintf("Hello %[fU]S", user.name));      // --> Hello dOLLY MOLLY
 * `%[C]S` - now yields a string with first letter in each word in Upper Case
 * `%[Cl]S` - now yields a string with first letter in each word in Upper Case and others in Lower case
 
+## See also
+
+### Available extensions for [sprintf-js](https://github.com/litmit/sprintf.js/tree/expandable):
+* [sprintf-ext-strftime](https://github.com/litmit/sprintf-ext-strftime) - Date/time formatting extension for `sprintf-js` (via `strftime`)
+* [sprintf-ext-string](https://github.com/litmit/sprintf-ext-string) - String formatting extension for `sprintf-js`

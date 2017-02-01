@@ -35,7 +35,7 @@ describe("sprintf-ext-string", function()
       should_throw("%[cl]S", [], SyntaxError);
    });
 
-   it("should return all formated strings as is", function() 
+   it("should return all formatted strings as is", function() 
    {
       assert.equal(empty, sprintf("%[]S", empty));
       assert.equal(chl,   sprintf("%[]S", chl));
@@ -45,7 +45,7 @@ describe("sprintf-ext-string", function()
       assert.equal(sym,   sprintf("%[]S", sym));
    });
 
-   it("should return all formated strings in UPPER CASE", function() 
+   it("should return all formatted strings in UPPER CASE", function() 
    {
       assert.equal(empty, sprintf("%S", empty));
       assert.equal("L",   sprintf("%S", chl));
@@ -55,7 +55,7 @@ describe("sprintf-ext-string", function()
       assert.equal(sym,   sprintf("%S", sym));
    });
 
-   it("should return all formated strings in lower case", function() 
+   it("should return all formatted strings in lower case", function() 
    {
        assert.equal(empty, sprintf("%[l]S", empty));
        assert.equal("l",   sprintf("%[l]S", chl));
